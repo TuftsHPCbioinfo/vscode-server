@@ -17,7 +17,7 @@ RUN apt-get update && apt-get upgrade -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN cd /opt \
-    && wget https://github.com/coder/code-server/releases/download/v4.98.2/code-server-4.98.2-linux-amd64.tar.gz \
-    && tar -xvf code-server-4.98.2-linux-amd64.tar.gz && mv code-server-4.98.2-linux-amd64 code-server \
+    && wget https://github.com/coder/code-server/releases/download/v4.20.1/code-server-4.20.1-linux-amd64.tar.gz \
+    && tar -xvf code-server-4.20.1-linux-amd64.tar.gz && mv code-server-4.20.1-linux-amd64 code-server \
     && chmod +x /opt/code-server/bin/* \
-    && rm /opt/code-server-4.98.2-linux-amd64.tar.gz
+    && rm /opt/code-server-4.20.1-linux-amd64.tar.gz
